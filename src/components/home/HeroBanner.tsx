@@ -34,12 +34,12 @@ const HeroBanner = () => {
               <Input
                 type="text"
                 placeholder="Enter your delivery location"
-                className="pl-10 pr-4 py-6 rounded-l-md w-full border-r-0 focus-visible:ring-foodie-500"
+                className="pl-10 pr-4 py-6 rounded-l-md w-full border-r-0 focus-visible:ring-foodnest-500"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               />
             </div>
-            <Button className="px-8 rounded-l-none bg-foodie-500 hover:bg-foodie-600 text-white">
+            <Button className="px-8 rounded-l-none bg-foodnest-500 hover:bg-foodnest-600 text-white">
               Find Food
             </Button>
           </div>
