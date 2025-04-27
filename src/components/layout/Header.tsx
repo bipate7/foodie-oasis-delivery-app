@@ -13,8 +13,8 @@ const Header = () => {
       <div className="container flex items-center justify-between h-16 px-4 mx-auto md:px-6">
         <div className="flex items-center">
           <Link to="/" className="flex items-center mr-6">
-            <span className="text-2xl font-bold text-foodnest-500">Food</span>
-            <span className="text-2xl font-bold text-gray-900">Nest</span>
+            <span className="text-2xl font-bold text-foodnest-500 dark:text-foodnest-400">Food</span>
+            <span className="text-2xl font-bold text-gray-900 dark:text-white">Nest</span>
           </Link>
           
           <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
