@@ -1,20 +1,33 @@
 
 import { Button } from '@/components/ui/button';
+import { Download, Smartphone } from 'lucide-react';
 
 const AppDownload = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-foodie-600 to-foodie-400 text-white">
-      <div className="container px-4 mx-auto">
+    <section className="py-16 bg-gradient-to-r from-foodie-600 to-foodie-400 text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80')] opacity-10 bg-cover bg-center" />
+      
+      <div className="container px-4 mx-auto relative">
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           <div className="mb-8 text-center md:text-left md:mb-0 md:w-1/2">
-            <h2 className="mb-4 text-3xl font-bold leading-tight md:text-4xl">
-              Download the FoodieOasis App
+            <div className="inline-flex items-center px-4 py-2 bg-white/10 rounded-full mb-6 backdrop-blur-sm animate-fade-in">
+              <Download className="w-4 h-4 mr-2" />
+              <span className="text-sm font-medium">Free Download</span>
+            </div>
+            
+            <h2 className="mb-4 text-3xl font-bold leading-tight md:text-4xl animate-fade-in">
+              Get the FoodNest App
             </h2>
-            <p className="mb-6 text-lg opacity-90 max-w-md">
-              Get the best food delivery experience with our app. Order food, track deliveries, and discover exclusive deals.
+            
+            <p className="mb-6 text-lg opacity-90 max-w-md animate-fade-in">
+              Order food from your favorite restaurants, track deliveries in real-time, and discover exclusive deals. Experience the best food delivery at your fingertips.
             </p>
+
             <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
-              <Button className="bg-black hover:bg-gray-900 flex items-center justify-center space-x-2">
+              <Button 
+                className="bg-black hover:bg-gray-900 flex items-center justify-center space-x-2 animate-fade-in card-hover"
+                variant="default"
+              >
                 <svg viewBox="0 0 384 512" width="20" className="mr-2">
                   <path 
                     fill="currentColor" 
@@ -26,7 +39,11 @@ const AppDownload = () => {
                   <div className="text-sm font-semibold text-left">App Store</div>
                 </div>
               </Button>
-              <Button className="bg-black hover:bg-gray-900 flex items-center justify-center space-x-2">
+              
+              <Button 
+                className="bg-black hover:bg-gray-900 flex items-center justify-center space-x-2 animate-fade-in card-hover"
+                variant="default"
+              >
                 <svg viewBox="0 0 512 512" width="20" className="mr-2">
                   <path 
                     fill="currentColor" 
@@ -41,12 +58,20 @@ const AppDownload = () => {
             </div>
           </div>
           
-          <div className="w-64 h-auto md:w-1/3">
+          <div className="w-72 h-auto md:w-1/3 relative animate-fade-in">
+            <div className="absolute -inset-4 bg-gradient-to-r from-foodie-400/30 to-foodie-600/30 blur-2xl rounded-3xl" />
             <img 
               src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" 
-              alt="FoodieOasis App" 
-              className="rounded-2xl shadow-xl"
+              alt="FoodNest App" 
+              className="relative rounded-2xl shadow-2xl transform transition-transform hover:scale-105 duration-500"
             />
+            
+            <div className="absolute -bottom-8 -right-8 bg-white/10 backdrop-blur-lg rounded-2xl p-4 shadow-xl animate-bounce-subtle">
+              <div className="flex items-center space-x-2">
+                <Smartphone className="w-5 h-5" />
+                <span className="text-sm font-medium">Available on all devices</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
