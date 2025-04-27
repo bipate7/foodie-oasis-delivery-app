@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -42,7 +41,7 @@ const Header = () => {
             </Button>
           </Link>
           
-          <Link to="/login">
+          <Link to="/profile">
             <Button variant="ghost" size="icon" className="animate-fade-in">
               <User className="w-5 h-5" />
             </Button>
@@ -53,7 +52,6 @@ const Header = () => {
           </Link>
         </div>
         
-        {/* Mobile menu button */}
         <div className="flex items-center space-x-2 md:hidden">
           <Link to="/cart">
             <Button variant="ghost" size="icon" className="relative">
@@ -72,7 +70,6 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="flex flex-col p-4 space-y-4 border-t md:hidden animate-fade-in">
           <div className="relative">
