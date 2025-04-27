@@ -1,7 +1,6 @@
-
 import Layout from '@/components/layout/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { gift } from 'lucide-react';
+import { Gift } from 'lucide-react';
 
 const offers = [
   {
@@ -48,7 +47,7 @@ const Offers = () => {
             <Card key={index} className="group transition-all duration-300 hover:shadow-lg card-hover">
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <div className="rounded-full p-2 bg-primary/10 text-primary">
-                  <gift className="w-6 h-6" />
+                  <Gift className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">
