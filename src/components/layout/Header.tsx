@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ShoppingCart, User, Search, Menu, X } from 'lucide-react';
+import ThemeToggle from '../theme/ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
+    <header className="sticky top-0 z-50 bg-background border-b shadow-sm">
       <div className="container flex items-center justify-between h-16 px-4 mx-auto md:px-6">
         <div className="flex items-center">
           <Link to="/" className="flex items-center mr-6">
@@ -30,9 +31,11 @@ const Header = () => {
             <Input
               type="search"
               placeholder="Search restaurants or food..."
-              className="w-40 pl-8 lg:w-64 focus:border-foodnest-500"
+              className="w-40 pl-8 lg:w-64"
             />
           </div>
+          
+          <ThemeToggle />
           
           <Link to="/cart">
             <Button variant="ghost" size="icon" className="relative animate-bounce-subtle">
