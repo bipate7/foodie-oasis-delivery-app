@@ -31,10 +31,12 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container px-4 mx-auto">
-        <h2 className="mb-2 text-3xl font-bold text-center animate-fade-in">What Our Customers Say</h2>
-        <p className="mb-12 text-gray-600 text-center animate-fade-in">
+        <h2 className="mb-2 text-3xl font-bold text-center text-gray-800 dark:text-white animate-fade-in">
+          What Our Customers Say
+        </h2>
+        <p className="mb-12 text-gray-600 dark:text-gray-300 text-center animate-fade-in">
           Trusted by thousands of food lovers across the city
         </p>
         
@@ -42,7 +44,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={testimonial.id}
-              className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in"
+              className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 animate-fade-in dark:bg-gray-800 dark:border-gray-700"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <CardContent className="p-6">
@@ -53,8 +55,8 @@ const Testimonials = () => {
                     className="w-12 h-12 rounded-full mr-4 object-cover"
                   />
                   <div>
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</p>
                   </div>
                 </div>
                 <div className="flex mb-4">
@@ -62,7 +64,7 @@ const Testimonials = () => {
                     <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600">{testimonial.content}</p>
+                <p className="text-gray-600 dark:text-gray-300">{testimonial.content}</p>
               </CardContent>
             </Card>
           ))}
