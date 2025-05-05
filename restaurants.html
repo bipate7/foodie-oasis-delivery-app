@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurants - FoodNest</title>
-  <meta name="description" content="Browse the best restaurants in your area on FoodNest">
+  <meta name="description" content="Explore restaurants available on FoodNest for delivery.">
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,165 +46,165 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          
-          <form class="d-flex me-2">
-            <div class="input-group">
-              <span class="input-group-text bg-white border-end-0">
-                <i class="fa fa-search text-muted"></i>
-              </span>
-              <input type="search" class="form-control border-start-0" placeholder="Search restaurants or food...">
-            </div>
-          </form>
-          
           <div class="d-flex align-items-center">
-            <a href="cart.html" class="btn btn-outline-secondary position-relative me-2">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">3</span>
-            </a>
-            <a href="profile.html" class="btn btn-outline-secondary me-2">
-              <i class="fas fa-user"></i>
-            </a>
-            <a href="login.html" class="btn btn-primary">Sign in</a>
+            <div class="position-relative me-3">
+              <a href="cart.html" class="btn btn-outline-secondary position-relative">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  3
+                </span>
+              </a>
+            </div>
+            <a href="login.html" class="btn btn-primary">Sign In</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Page Title -->
-  <section class="py-4 bg-light">
-    <div class="container">
-      <h1 class="mb-0">Restaurants</h1>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Restaurants</li>
-        </ol>
-      </nav>
-    </div>
-  </section>
-
-  <!-- Filters & Restaurants -->
+  <!-- Restaurant Listing Section -->
   <section class="py-5">
     <div class="container">
-      <div class="row g-4">
-        <!-- Sidebar Filters -->
-        <div class="col-lg-3">
-          <div class="card border-0 shadow-sm mb-4">
+      <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-lg-3 mb-4">
+          <div class="card border-0 shadow-sm">
             <div class="card-body">
               <h5 class="mb-3">Filters</h5>
               
               <div class="mb-4">
-                <label class="form-label fw-bold">Sort By</label>
-                <select class="form-select">
-                  <option selected>Recommended</option>
-                  <option>Rating: High to Low</option>
-                  <option>Delivery Time</option>
-                  <option>Cost: Low to High</option>
-                  <option>Cost: High to Low</option>
-                </select>
-              </div>
-              
-              <div class="mb-4">
-                <label class="form-label fw-bold">Cuisine</label>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="cuisine-italian">
-                  <label class="form-check-label" for="cuisine-italian">Italian</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="cuisine-mexican">
-                  <label class="form-check-label" for="cuisine-mexican">Mexican</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="cuisine-chinese">
-                  <label class="form-check-label" for="cuisine-chinese">Chinese</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="cuisine-indian">
-                  <label class="form-check-label" for="cuisine-indian">Indian</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="cuisine-sushi">
-                  <label class="form-check-label" for="cuisine-sushi">Sushi</label>
+                <h6 class="mb-2">Cuisine Types</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="italian">
+                  <label class="form-check-label" for="italian">Italian</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="cuisine-pizza">
-                  <label class="form-check-label" for="cuisine-pizza">Pizza</label>
+                  <input class="form-check-input" type="checkbox" id="indian">
+                  <label class="form-check-label" for="indian">Indian</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="chinese">
+                  <label class="form-check-label" for="chinese">Chinese</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="japanese">
+                  <label class="form-check-label" for="japanese">Japanese</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="mexican">
+                  <label class="form-check-label" for="mexican">Mexican</label>
                 </div>
               </div>
               
               <div class="mb-4">
-                <label class="form-label fw-bold">Price Range</label>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="price-$">
-                  <label class="form-check-label" for="price-$">$ (Inexpensive)</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="price-$$">
-                  <label class="form-check-label" for="price-$$">$$ (Moderate)</label>
+                <h6 class="mb-2">Price Range</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price1">
+                  <label class="form-check-label" for="price1">$</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="price-$$$">
-                  <label class="form-check-label" for="price-$$$">$$$ (Expensive)</label>
+                  <input class="form-check-input" type="checkbox" id="price2">
+                  <label class="form-check-label" for="price2">$$</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="price3">
+                  <label class="form-check-label" for="price3">$$$</label>
                 </div>
               </div>
               
               <div class="mb-4">
-                <label class="form-label fw-bold">Dietary Needs</label>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="diet-vegetarian">
-                  <label class="form-check-label" for="diet-vegetarian">Vegetarian</label>
-                </div>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="diet-vegan">
-                  <label class="form-check-label" for="diet-vegan">Vegan</label>
+                <h6 class="mb-2">Dietary Preferences</h6>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="veg">
+                  <label class="form-check-label" for="veg">Vegetarian</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="diet-gluten">
-                  <label class="form-check-label" for="diet-gluten">Gluten Free</label>
+                  <input class="form-check-input" type="checkbox" id="vegan">
+                  <label class="form-check-label" for="vegan">Vegan</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gluten">
+                  <label class="form-check-label" for="gluten">Gluten-Free</label>
                 </div>
               </div>
               
-              <div class="text-center">
-                <button class="btn btn-primary w-100">Apply Filters</button>
-                <button class="btn btn-link text-muted w-100">Clear All</button>
-              </div>
+              <button class="btn btn-primary w-100">Apply Filters</button>
             </div>
           </div>
         </div>
         
-        <!-- Restaurants List -->
+        <!-- Restaurant Listings -->
         <div class="col-lg-9">
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <p class="mb-0"><strong>42 restaurants</strong> in your area</p>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-outline-secondary active">
-                <i class="fas fa-th-large"></i>
+          <div class="mb-4 d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">All Restaurants</h4>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
+                Sort by: Recommended
               </button>
-              <button type="button" class="btn btn-outline-secondary">
-                <i class="fas fa-list"></i>
-              </button>
+              <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                <li><a class="dropdown-item" href="#">Recommended</a></li>
+                <li><a class="dropdown-item" href="#">Rating (High to Low)</a></li>
+                <li><a class="dropdown-item" href="#">Delivery Time</a></li>
+                <li><a class="dropdown-item" href="#">Distance</a></li>
+              </ul>
             </div>
           </div>
           
           <div class="row g-4">
-            <!-- Restaurant Item -->
+            <!-- Restaurant Cards -->
             <div class="col-md-6 col-lg-4">
-              <div class="card h-100 restaurant-card">
+              <div class="restaurant-card card h-100">
                 <div class="restaurant-image">
-                  <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Restaurant">
-                  <span class="badge bg-primary position-absolute">Promoted</span>
+                  <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pizza Place" class="card-img-top">
+                  <span class="badge bg-primary position-absolute top-2 start-2">Promoted</span>
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h5 class="card-title mb-0">Burger Palace</h5>
-                    <span class="rating">
-                      <i class="fas fa-star"></i> 4.8
-                    </span>
+                    <h5 class="card-title mb-0">Pizza Palace</h5>
+                    <span class="rating"><i class="fas fa-star"></i> 4.5</span>
                   </div>
-                  <p class="text-muted small">Burgers, Fast Food</p>
+                  <p class="card-text text-muted small mb-2">Italian, Pizza, Pasta</p>
+                  <div class="d-flex justify-content-between text-muted small">
+                    <span>25-35 min</span>
+                    <span>$$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+              <div class="restaurant-card card h-100">
+                <div class="restaurant-image">
+                  <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Burger Joint" class="card-img-top">
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title mb-0">Burger Joint</h5>
+                    <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                  </div>
+                  <p class="card-text text-muted small mb-2">American, Burgers</p>
                   <div class="d-flex justify-content-between text-muted small">
                     <span>15-25 min</span>
+                    <span>$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+              <div class="restaurant-card card h-100">
+                <div class="restaurant-image">
+                  <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sushi Express" class="card-img-top">
+                  <span class="badge bg-primary position-absolute top-2 start-2">Promoted</span>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title mb-0">Sushi Express</h5>
+                    <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                  </div>
+                  <p class="card-text text-muted small mb-2">Japanese, Sushi</p>
+                  <div class="d-flex justify-content-between text-muted small">
+                    <span>30-40 min</span>
                     <span>$$$</span>
                   </div>
                 </div>
@@ -212,18 +212,36 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-              <div class="card h-100 restaurant-card">
+              <div class="restaurant-card card h-100">
                 <div class="restaurant-image">
-                  <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Restaurant">
+                  <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Indian Cuisine" class="card-img-top">
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h5 class="card-title mb-0">Pizza Heaven</h5>
-                    <span class="rating">
-                      <i class="fas fa-star"></i> 4.5
-                    </span>
+                    <h5 class="card-title mb-0">Delhi Delights</h5>
+                    <span class="rating"><i class="fas fa-star"></i> 4.4</span>
                   </div>
-                  <p class="text-muted small">Pizza, Italian</p>
+                  <p class="card-text text-muted small mb-2">Indian, Curry</p>
+                  <div class="d-flex justify-content-between text-muted small">
+                    <span>35-45 min</span>
+                    <span>$$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+              <div class="restaurant-card card h-100">
+                <div class="restaurant-image">
+                  <img src="https://images.unsplash.com/photo-1570461226587-22c0b4864db4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Taco Town" class="card-img-top">
+                  <span class="badge bg-primary position-absolute top-2 start-2">Promoted</span>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title mb-0">Taco Town</h5>
+                    <span class="rating"><i class="fas fa-star"></i> 4.2</span>
+                  </div>
+                  <p class="card-text text-muted small mb-2">Mexican, Tacos</p>
                   <div class="d-flex justify-content-between text-muted small">
                     <span>20-30 min</span>
                     <span>$$</span>
@@ -233,84 +251,19 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-              <div class="card h-100 restaurant-card">
+              <div class="restaurant-card card h-100">
                 <div class="restaurant-image">
-                  <img src="https://images.unsplash.com/photo-1569050937828-150dbd1ab5af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Restaurant">
-                </div>
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h5 class="card-title mb-0">Sushi Express</h5>
-                    <span class="rating">
-                      <i class="fas fa-star"></i> 4.7
-                    </span>
-                  </div>
-                  <p class="text-muted small">Japanese, Sushi</p>
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>25-40 min</span>
-                    <span>$$$</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-              <div class="card h-100 restaurant-card">
-                <div class="restaurant-image">
-                  <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Restaurant">
-                </div>
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h5 class="card-title mb-0">Taco Corner</h5>
-                    <span class="rating">
-                      <i class="fas fa-star"></i> 4.6
-                    </span>
-                  </div>
-                  <p class="text-muted small">Mexican, Tacos</p>
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>10-20 min</span>
-                    <span>$</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-              <div class="card h-100 restaurant-card">
-                <div class="restaurant-image">
-                  <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Restaurant">
+                  <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pasta Paradise" class="card-img-top">
                 </div>
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center mb-2">
                     <h5 class="card-title mb-0">Pasta Paradise</h5>
-                    <span class="rating">
-                      <i class="fas fa-star"></i> 4.4
-                    </span>
+                    <span class="rating"><i class="fas fa-star"></i> 4.6</span>
                   </div>
-                  <p class="text-muted small">Italian, Pasta</p>
+                  <p class="card-text text-muted small mb-2">Italian, Pasta</p>
                   <div class="d-flex justify-content-between text-muted small">
-                    <span>30-45 min</span>
-                    <span>$$</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4">
-              <div class="card h-100 restaurant-card">
-                <div class="restaurant-image">
-                  <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Restaurant">
-                </div>
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h5 class="card-title mb-0">Pizza Express</h5>
-                    <span class="rating">
-                      <i class="fas fa-star"></i> 4.3
-                    </span>
-                  </div>
-                  <p class="text-muted small">Pizza, Italian</p>
-                  <div class="d-flex justify-content-between text-muted small">
-                    <span>15-25 min</span>
-                    <span>$$</span>
+                    <span>30-40 min</span>
+                    <span>$$$</span>
                   </div>
                 </div>
               </div>
@@ -321,13 +274,13 @@
           <nav class="mt-5">
             <ul class="pagination justify-content-center">
               <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
               </li>
               <li class="page-item active"><a class="page-link" href="#">1</a></li>
               <li class="page-item"><a class="page-link" href="#">2</a></li>
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+                <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
               </li>
             </ul>
           </nav>
@@ -340,67 +293,45 @@
   <footer class="bg-light pt-5">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <a href="index.html" class="d-inline-block mb-3">
-            <span class="fw-bold text-primary fs-4">Food</span><span class="fw-bold text-dark fs-4">Nest</span>
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-block" href="index.html">
+            <span class="fw-bold text-primary">Food</span><span class="fw-bold text-dark">Nest</span>
           </a>
           <p class="text-muted">Discover the best food and drinks in your area. FoodNest helps you find and order from the best local restaurants with just a few taps.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        
-        <div class="col-sm-6 col-lg-2">
-          <h5 class="mb-4">Information</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="about.html" class="nav-link p-0 text-muted">About us</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="faq.html" class="nav-link p-0 text-muted">FAQ</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="blog.html" class="nav-link p-0 text-muted">Blog</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="contact.html" class="nav-link p-0 text-muted">Contact us</a>
-            </li>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3">Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted">About Us</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Blog</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-muted">Contact Us</a></li>
           </ul>
         </div>
-        
-        <div class="col-sm-6 col-lg-3">
-          <h5 class="mb-4">For Restaurants</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="partner.html" class="nav-link p-0 text-muted">Become a Partner</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="restaurant-app.html" class="nav-link p-0 text-muted">Restaurant App</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="restaurant-signup.html" class="nav-link p-0 text-muted">Sign up as Restaurant</a>
-            </li>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3">For Restaurants</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted">Become a Partner</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Restaurant App</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Sign up as Restaurant</a></li>
           </ul>
         </div>
-        
-        <div class="col-sm-6 col-lg-3">
-          <h5 class="mb-4">Legal</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="terms.html" class="nav-link p-0 text-muted">Terms & Conditions</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="privacy.html" class="nav-link p-0 text-muted">Privacy Policy</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="cookies.html" class="nav-link p-0 text-muted">Cookies Policy</a>
-            </li>
-          </ul>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="mb-3">Subscribe to Newsletter</h5>
+          <p class="text-muted">Get updates about new restaurants and offers</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
       </div>
-      
       <div class="py-4 mt-4 border-top">
         <p class="text-center text-muted mb-0">
           © <span id="current-year">2025</span> FoodNest. All rights reserved.

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offers & Promotions - FoodNest</title>
-  <meta name="description" content="Explore special offers and discounts on FoodNest food delivery">
+  <title>Special Offers - FoodNest</title>
+  <meta name="description" content="Discover great deals and special offers on FoodNest.">
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,61 +18,6 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Additional CSS for this page -->
-  <style>
-    .offer-card {
-      transition: all 0.3s;
-      border: none;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    .offer-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    }
-    
-    .offer-image {
-      height: 200px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .offer-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .offer-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
-    }
-    
-    .offer-badge {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      padding: 5px 15px;
-      background-color: var(--primary);
-      color: white;
-      border-radius: 20px;
-      font-weight: 500;
-    }
-    
-    .offer-countdown {
-      background-color: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(5px);
-      border-radius: 5px;
-      padding: 5px 10px;
-    }
-  </style>
 </head>
 <body>
   <!-- Header/Navbar -->
@@ -101,202 +46,155 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          
           <div class="d-flex align-items-center">
-            <a href="cart.html" class="btn btn-outline-secondary position-relative me-2">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">3</span>
-            </a>
-            <a href="profile.html" class="btn btn-outline-secondary me-2">
-              <i class="fas fa-user"></i>
-            </a>
-            <a href="login.html" class="btn btn-primary">Sign in</a>
+            <div class="position-relative me-3">
+              <a href="cart.html" class="btn btn-outline-secondary position-relative">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  3
+                </span>
+              </a>
+            </div>
+            <a href="login.html" class="btn btn-primary">Sign In</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Page Title -->
-  <section class="py-4 bg-light">
-    <div class="container">
-      <h1 class="mb-0">Offers & Promotions</h1>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Offers</li>
-        </ol>
-      </nav>
-    </div>
-  </section>
-
-  <!-- Featured Offer Banner -->
+  <!-- Offers Section -->
   <section class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card border-0 rounded-3 overflow-hidden">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Special Offer" class="img-fluid h-100 w-100 object-fit-cover">
-              </div>
-              <div class="col-md-6 d-flex align-items-center">
-                <div class="p-4 p-md-5">
-                  <div class="badge bg-danger mb-2">Limited Time</div>
-                  <h2 class="display-5 fw-bold mb-3">50% OFF Your First Order</h2>
-                  <p class="lead mb-4">New to FoodNest? Enjoy 50% off your first order with us! Use the code below at checkout.</p>
-                  
-                  <div class="mb-4">
-                    <div class="input-group">
-                      <input type="text" class="form-control form-control-lg" value="WELCOME50" readonly>
-                      <button class="btn btn-primary" type="button" id="copy-code">Copy</button>
-                    </div>
-                    <small class="text-muted">Valid until September 30, 2025</small>
+      <div class="text-center mb-5">
+        <h1 class="fw-bold mb-2">Special Offers</h1>
+        <p class="text-muted">Discover our latest deals and save on your favorite meals</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- First Offer Card -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="bg-primary bg-opacity-10 p-2 rounded-circle text-primary me-3">
+                    <i class="fas fa-gift"></i>
                   </div>
-                  
-                  <a href="restaurants.html" class="btn btn-lg btn-primary">Order Now</a>
+                  <h5 class="card-title mb-0">First Order Discount</h5>
                 </div>
+                <span class="badge bg-primary">50% OFF</span>
+              </div>
+              <p class="card-text mb-4">Get 50% off on your first order with code WELCOME50</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">Valid until Dec 31, 2025</span>
+                <code class="bg-light p-2 rounded">WELCOME50</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second Offer Card -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="bg-primary bg-opacity-10 p-2 rounded-circle text-primary me-3">
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Weekend Special</h5>
+                </div>
+                <span class="badge bg-primary">Free Delivery</span>
+              </div>
+              <p class="card-text mb-4">Order above $30 and get free delivery on weekends</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">Every Saturday and Sunday</span>
+                <code class="bg-light p-2 rounded">WEEKEND</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Third Offer Card -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="bg-primary bg-opacity-10 p-2 rounded-circle text-primary me-3">
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Student Discount</h5>
+                </div>
+                <span class="badge bg-primary">15% OFF</span>
+              </div>
+              <p class="card-text mb-4">15% off for students with valid ID</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">Valid throughout the year</span>
+                <code class="bg-light p-2 rounded">STUDENT15</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fourth Offer Card -->
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="bg-primary bg-opacity-10 p-2 rounded-circle text-primary me-3">
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Family Package</h5>
+                </div>
+                <span class="badge bg-primary">20% OFF</span>
+              </div>
+              <p class="card-text mb-4">Order for 4 or more and get 20% off</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">Valid on all family meals</span>
+                <code class="bg-light p-2 rounded">FAMILY20</code>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Offers Grid -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="mb-5">Current Promotions</h2>
-      <div class="row g-4">
-        <!-- Offer Card 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card offer-card h-100">
-            <div class="offer-image">
-              <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Burger Offer">
-              <div class="offer-overlay"></div>
-              <span class="offer-badge">30% OFF</span>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Burger Bonanza</h4>
-              <p class="card-text text-muted">Get 30% off on all burgers every Monday. Valid on minimum order of $15.</p>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="text-primary fw-bold">Code: BURGERLOVE</span>
-                <button class="btn btn-sm btn-outline-primary">Copy Code</button>
+      
+      <!-- Featured Partners with Offers -->
+      <div class="mt-5">
+        <h2 class="text-center mb-4">Featured Partners with Special Deals</h2>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Restaurant">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Palace</h5>
+                <p class="card-text">Buy 1 large pizza, get 1 medium pizza free every Tuesday</p>
+                <a href="restaurants.html" class="btn btn-outline-primary">Order Now</a>
               </div>
-            </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-muted">Valid until October 15, 2025</small>
             </div>
           </div>
-        </div>
-        
-        <!-- Offer Card 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card offer-card h-100">
-            <div class="offer-image">
-              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Pizza Offer">
-              <div class="offer-overlay"></div>
-              <span class="offer-badge">Buy 1 Get 1</span>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Pizza Madness</h4>
-              <p class="card-text text-muted">Buy any large pizza and get a medium pizza absolutely free. Available at select restaurants.</p>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="text-primary fw-bold">Code: PIZZAFUN</span>
-                <button class="btn btn-sm btn-outline-primary">Copy Code</button>
+          
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Restaurant">
+              <div class="card-body">
+                <h5 class="card-title">Burger Joint</h5>
+                <p class="card-text">30% off on burger combos when you order online</p>
+                <a href="restaurants.html" class="btn btn-outline-primary">Order Now</a>
               </div>
-            </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-muted">Valid until November 5, 2025</small>
             </div>
           </div>
-        </div>
-        
-        <!-- Offer Card 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card offer-card h-100">
-            <div class="offer-image">
-              <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Free Delivery">
-              <div class="offer-overlay"></div>
-              <span class="offer-badge">Free</span>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Free Delivery</h4>
-              <p class="card-text text-muted">Enjoy free delivery on all orders above $25. No coupon needed, discount applied automatically.</p>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="text-primary fw-bold">No Code Required</span>
-                <a href="restaurants.html" class="btn btn-sm btn-primary">Order Now</a>
+          
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Restaurant">
+              <div class="card-body">
+                <h5 class="card-title">Sushi Express</h5>
+                <p class="card-text">Free miso soup with orders over $25</p>
+                <a href="restaurants.html" class="btn btn-outline-primary">Order Now</a>
               </div>
-            </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-muted">Ongoing Offer</small>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Offer Card 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card offer-card h-100">
-            <div class="offer-image">
-              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Dessert Offer">
-              <div class="offer-overlay"></div>
-              <span class="offer-badge">25% OFF</span>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Sweet Treats</h4>
-              <p class="card-text text-muted">25% off on all desserts when you order a main course. Perfect way to end your meal!</p>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="text-primary fw-bold">Code: SWEETDEAL</span>
-                <button class="btn btn-sm btn-outline-primary">Copy Code</button>
-              </div>
-            </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-muted">Valid until October 31, 2025</small>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Offer Card 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card offer-card h-100">
-            <div class="offer-image">
-              <img src="https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Weekend Offer">
-              <div class="offer-overlay"></div>
-              <span class="offer-badge">20% OFF</span>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Weekend Special</h4>
-              <p class="card-text text-muted">Enjoy 20% off on all orders during weekends. Perfect for family gatherings!</p>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="text-primary fw-bold">Code: WEEKEND20</span>
-                <button class="btn btn-sm btn-outline-primary">Copy Code</button>
-              </div>
-            </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-muted">Valid on all weekends</small>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Offer Card 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card offer-card h-100">
-            <div class="offer-image">
-              <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Healthy Meals">
-              <div class="offer-overlay"></div>
-              <span class="offer-badge">15% OFF</span>
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Healthy Options</h4>
-              <p class="card-text text-muted">15% off on all salads and healthy bowls. Eat healthy and save money!</p>
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <span class="text-primary fw-bold">Code: HEALTHYEATS</span>
-                <button class="btn btn-sm btn-outline-primary">Copy Code</button>
-              </div>
-            </div>
-            <div class="card-footer bg-white border-0">
-              <small class="text-muted">Valid until December 1, 2025</small>
             </div>
           </div>
         </div>
@@ -305,23 +203,18 @@
   </section>
 
   <!-- Newsletter -->
-  <section class="py-5">
+  <section class="py-5 bg-light">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2>Subscribe to Our Newsletter</h2>
-          <p class="lead text-muted mb-4">Stay updated with the latest offers and promotions directly to your inbox.</p>
-          
-          <form class="row g-3 justify-content-center">
-            <div class="col-md-8">
-              <input type="email" class="form-control form-control-lg" placeholder="Your email address">
-            </div>
-            <div class="col-md-4">
-              <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
-            </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-3">Stay Updated with New Offers</h2>
+          <p class="mb-0">Subscribe to our newsletter and never miss out on exclusive deals and promotions.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex">
+            <input type="email" class="form-control" placeholder="Your email address">
+            <button type="submit" class="btn btn-primary ms-2">Subscribe</button>
           </form>
-          
-          <p class="small text-muted mt-3">By subscribing, you agree to our <a href="privacy.html">Privacy Policy</a> and consent to receive marketing emails.</p>
         </div>
       </div>
     </div>
@@ -331,67 +224,45 @@
   <footer class="bg-light pt-5">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <a href="index.html" class="d-inline-block mb-3">
-            <span class="fw-bold text-primary fs-4">Food</span><span class="fw-bold text-dark fs-4">Nest</span>
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-block" href="index.html">
+            <span class="fw-bold text-primary">Food</span><span class="fw-bold text-dark">Nest</span>
           </a>
           <p class="text-muted">Discover the best food and drinks in your area. FoodNest helps you find and order from the best local restaurants with just a few taps.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-        
-        <div class="col-sm-6 col-lg-2">
-          <h5 class="mb-4">Information</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="about.html" class="nav-link p-0 text-muted">About us</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="faq.html" class="nav-link p-0 text-muted">FAQ</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="blog.html" class="nav-link p-0 text-muted">Blog</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="contact.html" class="nav-link p-0 text-muted">Contact us</a>
-            </li>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3">Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted">About Us</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Blog</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-muted">Contact Us</a></li>
           </ul>
         </div>
-        
-        <div class="col-sm-6 col-lg-3">
-          <h5 class="mb-4">For Restaurants</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="partner.html" class="nav-link p-0 text-muted">Become a Partner</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="restaurant-app.html" class="nav-link p-0 text-muted">Restaurant App</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="restaurant-signup.html" class="nav-link p-0 text-muted">Sign up as Restaurant</a>
-            </li>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3">For Restaurants</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted">Become a Partner</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Restaurant App</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Sign up as Restaurant</a></li>
           </ul>
         </div>
-        
-        <div class="col-sm-6 col-lg-3">
-          <h5 class="mb-4">Legal</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="terms.html" class="nav-link p-0 text-muted">Terms & Conditions</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="privacy.html" class="nav-link p-0 text-muted">Privacy Policy</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="cookies.html" class="nav-link p-0 text-muted">Cookies Policy</a>
-            </li>
-          </ul>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="mb-3">Subscribe to Newsletter</h5>
+          <p class="text-muted">Get updates about new restaurants and offers</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your Email">
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
       </div>
-      
       <div class="py-4 mt-4 border-top">
         <p class="text-center text-muted mb-0">
           © <span id="current-year">2025</span> FoodNest. All rights reserved.
@@ -405,38 +276,5 @@
   
   <!-- Custom JavaScript -->
   <script src="js/script.js"></script>
-  
-  <!-- Page-specific JavaScript -->
-  <script>
-    // Copy coupon code functionality
-    document.getElementById('copy-code').addEventListener('click', function() {
-      const codeInput = this.previousElementSibling;
-      codeInput.select();
-      document.execCommand('copy');
-      
-      // Change button text temporarily
-      const originalText = this.innerText;
-      this.innerText = 'Copied!';
-      
-      setTimeout(() => {
-        this.innerText = originalText;
-      }, 2000);
-    });
-    
-    // Copy offer codes
-    document.querySelectorAll('.btn-outline-primary').forEach(button => {
-      button.addEventListener('click', function() {
-        const code = this.closest('.card-body').querySelector('.text-primary').innerText.split(': ')[1];
-        navigator.clipboard.writeText(code).then(() => {
-          const originalText = this.innerText;
-          this.innerText = 'Copied!';
-          
-          setTimeout(() => {
-            this.innerText = originalText;
-          }, 2000);
-        });
-      });
-    });
-  </script>
 </body>
 </html>
